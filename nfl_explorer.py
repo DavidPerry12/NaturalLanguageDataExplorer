@@ -12,7 +12,7 @@ st.set_page_config(page_title="NFL Data Explorer", page_icon="🏈", layout="wid
 # load the data and rename columns to something readable
 @st.cache_data
 def load_data():
-    df = pd.read_csv("NFL_Combined_Data_2023.csv")
+    df = pd.read_csv("NFL_Data.csv")
     df.columns = df.columns.str.replace('.', '_', regex=False)
     df = df.rename(columns={
         'Tm': 'team',
