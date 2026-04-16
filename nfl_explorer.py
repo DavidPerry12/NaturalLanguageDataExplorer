@@ -6,7 +6,7 @@ import matplotlib
 import numpy as np
 matplotlib.use('Agg')
 
-st.set_page_config(page_title="NFL Data Explorer", layout="wide")
+st.set_page_config(page_title="StatSpeak", layout="wide")
 
 # Load the data and clean up the column names so they are easier to work with
 @st.cache_data
@@ -265,7 +265,7 @@ def make_scatter_chart(data, col_x, col_y):
 
 # Streamlit page creation
 
-st.title("NFL Data Explorer")
+st.title("StatSpeak")
 st.write("Type a question about NFL teams and get an answer. Uses natural language instead of SQL.")
 st.write("---")
 
@@ -424,4 +424,4 @@ Scatter plots:
     )
 
 st.write("---")
-st.write("CS 3960 Final Project | David Perry | University of Utah")
+st.write("StatSpeak | CS 3960 Final Project | David Perry | University of Utah")
